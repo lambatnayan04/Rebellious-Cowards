@@ -1,0 +1,8 @@
+prefix=/home/akio/catkin_ws/install
+
+Name: task_0_package
+Description: Description of task_0_package
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/akio/catkin_ws/install/lib 
+Requires: 

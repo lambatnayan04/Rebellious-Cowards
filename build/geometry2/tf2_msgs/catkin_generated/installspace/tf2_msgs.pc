@@ -1,0 +1,8 @@
+prefix=/home/akio/catkin_ws/install
+
+Name: tf2_msgs
+Description: Description of tf2_msgs
+Version: 0.6.5
+Cflags: -I/home/akio/catkin_ws/install/include
+Libs: -L/home/akio/catkin_ws/install/lib 
+Requires: message_generation geometry_msgs actionlib_msgs

@@ -1,0 +1,8 @@
+prefix=/home/akio/catkin_ws/devel
+
+Name: edrone_server
+Description: Description of edrone_server
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/akio/catkin_ws/devel/lib -ledrone_client
+Requires: roscpp rospy std_msgs message_runtime
