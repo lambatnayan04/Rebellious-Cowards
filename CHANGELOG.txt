@@ -3,3 +3,4 @@
 ~/catkin_ws/src/sr_task_0/scripts/get_marker_data.py
 
 -Created the required dictionary <not yet tested>
+-error due to indexing.
