@@ -563,6 +563,12 @@ sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
 
+//Value Computed by CMake
+sr_task_0_BINARY_DIR:STATIC=/home/akio/catkin_ws/build/sr_task_0
+
+//Value Computed by CMake
+sr_task_0_SOURCE_DIR:STATIC=/home/akio/catkin_ws/src/sr_task_0
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
 

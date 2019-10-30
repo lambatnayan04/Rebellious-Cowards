@@ -1739,19 +1739,6 @@ edrone_client_generate_messages_py/fast:
 .PHONY : edrone_client_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named edronecam
-
-# Build rule for target.
-edronecam: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 edronecam
-.PHONY : edronecam
-
-# fast build rule for target.
-edronecam/fast:
-	$(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build
-.PHONY : edronecam/fast
-
-#=============================================================================
 # Target rules for targets named edrone_client_generate_messages_cpp
 
 # Build rule for target.
@@ -3757,7 +3744,6 @@ help:
 	@echo "... edroneclient"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... edrone_client_generate_messages_py"
-	@echo "... edronecam"
 	@echo "... edrone_client_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... edrone_client_gencpp"

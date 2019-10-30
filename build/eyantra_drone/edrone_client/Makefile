@@ -100,17 +100,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -132,6 +121,17 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -299,21 +299,6 @@ edrone_client_generate_messages_py: eyantra_drone/edrone_client/CMakeFiles/edron
 edrone_client_generate_messages_py/fast:
 	cd /home/akio/catkin_ws/build && $(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edrone_client_generate_messages_py.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edrone_client_generate_messages_py.dir/build
 .PHONY : edrone_client_generate_messages_py/fast
-
-# Convenience name for target.
-eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/rule:
-	cd /home/akio/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/rule
-.PHONY : eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/rule
-
-# Convenience name for target.
-edronecam: eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/rule
-
-.PHONY : edronecam
-
-# fast build rule for target.
-edronecam/fast:
-	cd /home/akio/catkin_ws/build && $(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build
-.PHONY : edronecam/fast
 
 # Convenience name for target.
 eyantra_drone/edrone_client/CMakeFiles/edrone_client_generate_messages_cpp.dir/rule:
@@ -522,33 +507,6 @@ src/Communication.cpp.s:
 	cd /home/akio/catkin_ws/build && $(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edrone_client.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edrone_client.dir/src/Communication.cpp.s
 .PHONY : src/Communication.cpp.s
 
-src/DroneCam.o: src/DroneCam.cpp.o
-
-.PHONY : src/DroneCam.o
-
-# target to build an object file
-src/DroneCam.cpp.o:
-	cd /home/akio/catkin_ws/build && $(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/src/DroneCam.cpp.o
-.PHONY : src/DroneCam.cpp.o
-
-src/DroneCam.i: src/DroneCam.cpp.i
-
-.PHONY : src/DroneCam.i
-
-# target to preprocess a source file
-src/DroneCam.cpp.i:
-	cd /home/akio/catkin_ws/build && $(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/src/DroneCam.cpp.i
-.PHONY : src/DroneCam.cpp.i
-
-src/DroneCam.s: src/DroneCam.cpp.s
-
-.PHONY : src/DroneCam.s
-
-# target to generate assembly for a file
-src/DroneCam.cpp.s:
-	cd /home/akio/catkin_ws/build && $(MAKE) -f eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/build.make eyantra_drone/edrone_client/CMakeFiles/edronecam.dir/src/DroneCam.cpp.s
-.PHONY : src/DroneCam.cpp.s
-
 src/DroneNode.o: src/DroneNode.cpp.o
 
 .PHONY : src/DroneNode.o
@@ -640,7 +598,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... _edrone_client_generate_messages_check_deps_edrone_services"
 	@echo "... install"
 	@echo "... _edrone_client_generate_messages_check_deps_edrone_msgs"
@@ -651,7 +608,6 @@ help:
 	@echo "... edroneclient"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... edrone_client_generate_messages_py"
-	@echo "... edronecam"
 	@echo "... edrone_client_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... edrone_client_gencpp"
@@ -665,12 +621,10 @@ help:
 	@echo "... edrone_client_genpy"
 	@echo "... edrone_client"
 	@echo "... edroneswarm"
+	@echo "... install/strip"
 	@echo "... src/Communication.o"
 	@echo "... src/Communication.i"
 	@echo "... src/Communication.s"
-	@echo "... src/DroneCam.o"
-	@echo "... src/DroneCam.i"
-	@echo "... src/DroneCam.s"
 	@echo "... src/DroneNode.o"
 	@echo "... src/DroneNode.i"
 	@echo "... src/DroneNode.s"

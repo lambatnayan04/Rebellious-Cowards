@@ -70,6 +70,7 @@ eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o
  /opt/ros/kinetic/include/ros/wall_timer.h
  /opt/ros/kinetic/include/ros/wall_timer_options.h
  /opt/ros/kinetic/include/rosconsole/macros_generated.h
+ /opt/ros/kinetic/include/std_msgs/Float64.h
  /opt/ros/kinetic/include/std_msgs/Header.h
  /opt/ros/kinetic/include/std_msgs/String.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h

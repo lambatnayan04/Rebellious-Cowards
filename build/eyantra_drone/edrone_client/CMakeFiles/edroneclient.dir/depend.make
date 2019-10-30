@@ -69,6 +69,7 @@ eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /op
 eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/std_msgs/Float64.h
 eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
 eyantra_drone/edrone_client/CMakeFiles/edroneclient.dir/src/DroneNode.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h

@@ -7,7 +7,7 @@
   <arg name="verbose" default="false"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find task_0_package)/worlds/$(arg world_name).world" />
+    <arg name="world_name" value="$(find sr_task_0)/worlds/$(arg world_name).world" />
     <arg name="debug" value="$(arg debug)" />
     <arg name="paused" value="$(arg paused)"/>
     <arg name="gui" value="$(arg gui)" />

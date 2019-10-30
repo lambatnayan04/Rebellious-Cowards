@@ -21,8 +21,7 @@ class Marker_detect():
 	def whycon_data(self,msg):
 
 
-		for i in range(5):
-            		self.whycon_marker[i] = [float("%.3f" %msg.poses[i].position.x), float("%.3f" %msg.poses[i].position.y), float("%.3f" %msg.poses[i].position.z)]
+		# Printing the detected markers on terminal
 		print(self.whycon_marker)
 
 
