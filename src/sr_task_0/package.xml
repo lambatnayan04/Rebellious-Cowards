@@ -1,10 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-<<<<<<< HEAD
-  <name>task_0_package</name>
-=======
   <name>sr_task_0</name>
->>>>>>> sasuke
   <version>0.0.0</version>
   <description>The task_0 package</description>
 
