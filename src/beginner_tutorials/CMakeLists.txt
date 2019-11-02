@@ -11,6 +11,10 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+<<<<<<< HEAD
+=======
+  message_generation
+>>>>>>> sasuke
 )
 
 ## System dependencies are found with CMake's conventions
@@ -36,7 +40,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * If MSG_DEP_SET isn't empty the following dependency has been pulled in
 ##     but can be declared for certainty nonetheless:
 ##     * add a exec_depend tag for "message_runtime"
+<<<<<<< HEAD
 ## * In this file (CMakeLists.txt):
+=======
+## * In this file (CMakeLsists.txt):
+>>>>>>> sasuke
 ##   * add "message_generation" and every package in MSG_DEP_SET to
 ##     find_package(catkin REQUIRED COMPONENTS ...)
 ##   * add "message_runtime" and every package in MSG_DEP_SET to
@@ -47,6 +55,7 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
+<<<<<<< HEAD
 # add_message_files(
 #   FILES
 #   Message1.msg
@@ -59,6 +68,20 @@ find_package(catkin REQUIRED COMPONENTS
 #   Service1.srv
 #   Service2.srv
 # )
+=======
+ add_message_files(
+   FILES
+   Num.msg
+
+ )
+
+## Generate services in the 'srv' folder
+ add_service_files(
+   FILES
+   AddTwoInts.srv
+
+ )
+>>>>>>> sasuke
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -68,10 +91,17 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
+<<<<<<< HEAD
 # generate_messages(
 #   DEPENDENCIES
 #   std_msgs
 # )
+=======
+ generate_messages(
+   DEPENDENCIES
+   std_msgs
+ )
+>>>>>>> sasuke
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -164,6 +194,7 @@ include_directories(
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
+<<<<<<< HEAD
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
 # install(TARGETS ${PROJECT_NAME}_node
@@ -176,6 +207,13 @@ include_directories(
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
+=======
+## Mark executables and/or libraries for installation
+# install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_node
+#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+>>>>>>> sasuke
 # )
 
 ## Mark cpp header files for installation
@@ -203,4 +241,22 @@ include_directories(
 # endif()
 
 ## Add folders to be run by python nosetests
+<<<<<<< HEAD
+=======
+
+add_executable(talker src/talker.cpp)
+target_link_libraries(talker ${catkin_LIBRARIES})
+add_dependencies(talker beginner_tutorials_generate_messages_cpp)
+
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+add_dependencies(listener beginner_tutorials_generate_messages_cpp)
+
+
+
+add_executable(mumbra src/mumbra.cpp)
+target_link_libraries(mumbra ${catkin_LIBRARIES})
+add_dependencies(mumbra beginner_tutorials_generate_messages_cpp)
+
+>>>>>>> sasuke
 # catkin_add_nosetests(test)

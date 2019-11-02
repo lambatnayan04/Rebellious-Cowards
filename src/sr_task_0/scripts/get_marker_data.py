@@ -19,8 +19,14 @@ class Marker_detect():
 	# Callback for /whycon/poses
 	# Please fill in the function
 	def whycon_data(self,msg):
+<<<<<<< HEAD
 
 
+=======
+		
+		self.whycon_marker = {0: [ float("%.3f" % msg.poses[0].position.x) , float("%.3f" % msg.poses[0].position.y) , float("%.3f" % msg.poses[0].position.z)] ,1: [ float("%.3f" % msg.poses[1].position.x) , float("%.3f" % msg.poses[1].position.y) , float("%.3f" % msg.poses[1].position.z)] ,2: [ float("%.3f" % msg.poses[2].position.x) , float("%.3f" % msg.poses[2].position.y) , float("%.3f" % msg.poses[2].position.z)] ,3: [ float("%.3f" % msg.poses[3].position.x) , float("%.3f" % msg.poses[3].position.y) , float("%.3f" % msg.poses[3].position.z)] ,4: [ float("%.3f" % msg.poses[4].position.x) , float("%.3f" % msg.poses[4].position.y) , float("%.3f" % msg.poses[4].position.z)]}
+	
+>>>>>>> sasuke
 		# Printing the detected markers on terminal
 		print(self.whycon_marker)
 

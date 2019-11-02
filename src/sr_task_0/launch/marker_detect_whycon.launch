@@ -2,8 +2,13 @@
   <!-- Arguments for WhyCon node -->
   <arg name="name" default="whycon"/>
   <arg name="targets" default="1"/>
+<<<<<<< HEAD
   <arg name="outer_diameter" default=".055"/>
   <arg name="inner_diameter" default=".020"/>
+=======
+  <arg name="outer_diameter" default=".55"/>
+  <arg name="inner_diameter" default=".20"/>
+>>>>>>> sasuke
 
   <!-- Running WhyCon node-->
   <node name="whycon" type="whycon" pkg="whycon" output="screen">
@@ -25,4 +30,8 @@
   </node>
 
 
+<<<<<<< HEAD
 </launch>
+=======
+</launch>
+>>>>>>> sasuke
