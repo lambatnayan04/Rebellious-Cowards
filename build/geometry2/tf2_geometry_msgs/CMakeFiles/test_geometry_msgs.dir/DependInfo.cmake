@@ -24,6 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/akio/catkin_ws/src/geometry2/tf2_msgs/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/kinetic/share/orocos_kdl/../../include"
   "/usr/include/eigen3"
   )
 

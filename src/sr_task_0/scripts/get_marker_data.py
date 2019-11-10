@@ -20,12 +20,8 @@ class Marker_detect():
 	# Please fill in the function
 	def whycon_data(self,msg):
 
-		self.whycon_marker = {0 : [round(float(msg.poses[0].position.x), 3), round(float(msg.poses[0].position.y), 3), round(float(msg.poses[0].position.z), 3)],
-							1 : [round(float(msg.poses[1].position.x), 3), round(float(msg.poses[1].position.y), 3), round(float(msg.poses[1].position.z), 3)],
-							2 : [round(float(msg.poses[2].position.x), 3), round(float(msg.poses[2].position.y), 3), round(float(msg.poses[2].position.z), 3)],
-							3 : [round(float(msg.poses[3].position.x), 3), round(float(msg.poses[3].position.y), 3), round(float(msg.poses[3].position.z), 3)],
-							4 : [round(float(msg.poses[4].position.x), 3), round(float(msg.poses[4].position.y), 3), round(float(msg.poses[4].position.z), 3)]}
-# Printing the detected markers on terminal
+		self.whycon_marker = {0: [ float("%.3f" % msg.poses[0].position.x) , float("%.3f" % msg.poses[0].position.y) , float("%.3f" % msg.poses[0].position.z)] ,1: [ float("%.3f" % msg.poses[1].position.x) , float("%.3f" % msg.poses[1].position.y) , float("%.3f" % msg.poses[1].position.z)] ,2: [ float("%.3f" % msg.poses[2].position.x) , float("%.3f" % msg.poses[2].position.y) , float("%.3f" % msg.poses[2].position.z)] ,3: [ float("%.3f" % msg.poses[3].position.x) , float("%.3f" % msg.poses[3].position.y) , float("%.3f" % msg.poses[3].position.z)] ,4: [ float("%.3f" % msg.poses[4].position.x) , float("%.3f" % msg.poses[4].position.y) , float("%.3f" % msg.poses[4].position.z)]}
+	# Printing the detected markers on terminal
 		print(self.whycon_marker)
 
 

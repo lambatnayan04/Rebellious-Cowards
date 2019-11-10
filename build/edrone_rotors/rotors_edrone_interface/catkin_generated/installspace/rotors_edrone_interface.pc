@@ -1,0 +1,8 @@
+prefix=/home/akio/catkin_ws/install
+
+Name: rotors_edrone_interface
+Description: Description of rotors_edrone_interface
+Version: 0.0.1
+Cflags: -I/home/akio/catkin_ws/install/include
+Libs: -L/home/akio/catkin_ws/install/lib 
+Requires: roscpp geometry_msgs mav_msgs trajectory_msgs edrone_client
