@@ -39,14 +39,16 @@
 import rospy
 from std_msgs.msg import String
 
+# this is use to count the blink
 def counter():
+    
     pub = rospy.Publisher('blink', String, queue_size=10)
     rospy.init_node('counter', anonymous=True)
     rate = rospy.Rate(10) # 10hz
-    while not rospy.is_shutdown():
-        hello_str = "hello world %s" % rospy.get_time()
-        rospy.loginfo(hello_str)
-        pub.publish(hello_str)
+    while !rospy.is_shutdown():
+        hello_string = "hello world %s" % rospy.get_time()
+        rospy.loginfo(hello_string)
+        pub.publish(hello_string)
         rate.sleep()
 
 if __name__ == '__main__':
